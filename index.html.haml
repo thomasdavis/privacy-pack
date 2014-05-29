@@ -1,0 +1,198 @@
+!!! 5
+%head
+  %title Reset The Net - Privacy Pack
+  %link(rel="stylesheet" type="text/css" href="css/bootstrap-theme.css")
+  %link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
+  %link(rel="stylesheet" type="text/css" href="css/custom.css")
+  %script(src="js/jquery.js")
+  %script(src="js/bootstrap.js")
+
+%body
+
+  .splash
+    .container
+      .row.text-center
+        [RESET THE NET]
+        %h1 Privacy Pack
+        [computers image]
+        %br
+        .col-sm-4.col-sm-offset-4
+          Lorem ipsum dolor sit amet, consectateur adipiscing elit.
+          Morbi et nulla egestas, luctus enim et, adipscing leo et iam.
+        .col-sm-6.col-sm-offset-3
+          %form.form-inline(role="form")
+            .form-group
+              %input.form-control(type="email" placeholder="Your email")
+              %button.btn Submit
+
+  .navigation.text-center
+    %a(href="#phone")Your Phone
+    | 
+    %a(href="#passwords")Your Passwords
+    | 
+    %a(href="#mac")Mac
+    | 
+    %a(href="#windows")Windows
+    |
+    %a(href="#gnu-linux")GNU/Linux
+  
+  #phone
+    .container
+      .row
+        %h2.text-center 
+          Your Phone
+        .col-sm-6.col-sm-offset-3
+          %p.text-center
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      .row
+        .col-sm-4.text-center
+          [chatsecure image]
+          %h3 ChatSecure
+          .separator
+          ChatSecure gives you secure chat with Google and XMPP users.
+          .separator
+          [playstore button]
+          %br
+          [appstore button]
+        .col-sm-4.text-center
+          [textsecure image]
+          %h3 TextSecure
+          .separator
+          TextSecure is strong, easy-to-use protection for your text messages.
+          .separator
+          [playstore button]
+          %br
+          [disabled appstore button]
+        .col-sm-4.text-center
+          [redphone image]
+          %h3 RedPhone
+          .separator
+          Strong privacy for your phone calls, whenever you need it.
+          .separator
+          [playstore button]
+          %br
+          [disabled appstore button]
+
+      .row
+        .col-sm-2.col-sm-offset-5.text-center
+          %a(href="#more-android") &#9660; More For Android
+          | 
+          %a(href="#more-iphone") &#9660; More For Iphone
+
+  #passwords
+    .container
+      .row.text-center
+        %h2 Your Passwords
+        Securing your passwords is key to protecting yourself online.
+        It takes minutes; do it now!
+      .row
+        .col-sm-6.text-center
+          [unique password image]
+          %h3 Unique Passwords
+          .dashed-separator
+          Do you use the same password everywhere?  Go change it now, starting with your email and Facebook.  Use LastPass, or write it down. 
+        .col-sm-6.text-center
+          [double protection image]
+          %h3 Double protection
+          .dashed-separator
+          Add a second layer of protection to your accounts on {Google}, {Facebook}, {Twitter}, {Yahoo}, {Dropbox}, and {other services} with 2-factor auth.
+      .row.text-center
+        %a(href="#") &#9660; More on Passwords 
+
+  #mac.text-center
+    .row
+      %h2 Your Mac
+      Securing your chats is easy. So is private, anonymous browsing. Try both. 
+    .row
+      .col-sm-6
+        [adium img]
+        %h3 Adium
+        .dashed-separator
+        Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %button.btn DOWNLOAD ADIUM
+        %a(href="#") Learn more!
+      .col-sm-6
+        [tor img]
+        %h3 Tor
+        .dashed-separator
+        Tor prevents people from learning your location or browsing habits.
+        %button.btn DOWNLOAD TOR
+        %a(href="#") Learn more!
+    .row
+      %a(href="#more-mac") &#9660; More for Mac 
+
+  #windows.text-center
+    .row
+      %h2 Windows 
+      Secure chats is pretty easy on Windows. Private, anonymous browsing is easier. Try both. 
+    .row
+      .col-sm-6
+        [pidgin img]
+        %h3 Pidgin
+        .dashed-separator
+        Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %button.btn DOWNLOAD PIDGIN 
+        %a(href="#") Learn more!
+      .col-sm-6
+        [tor img]
+        %h3 Tor
+        .dashed-separator
+        Tor prevents people from learning your location or browsing habits.
+        %button.btn DOWNLOAD TOR
+        %a(href="#") Learn more!
+    .row
+      %a(href="#more-windows-linux") &#9660; More for Windows 
+
+  #gnu-linux.text-center
+    .row
+      %h2 GNU/Linux 
+      GNU/Linux users probably have these tools already. 
+      If not, install them with your package manager!
+    .row
+      .col-sm-6
+        [pidgin img]
+        %h3 Pidgin
+        .dashed-separator
+        Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %button.btn DOWNLOAD PIDGIN 
+        %a(href="#") Learn more!
+      .col-sm-6
+        [tor img]
+        %h3 Tor
+        .dashed-separator
+        Tor prevents people from learning your location or browsing habits.
+        %button.btn DOWNLOAD TOR
+        %a(href="#") Learn more!
+    .row
+      %a(href="#more-windows-linux") &#9660; More for GNU/Linux 
+  #more.text-center
+    .row
+      %h3#more-android More for Android
+      .carat-separator
+      %ol
+        %li {Encrypt your phone} and choose a 10 digit PIN, to for very strong protection if your phone is lost, stolen, or seized.
+        %li {Firefox} syncs your passwords securely, and lets you install privacy-protecting extensions like {Adblock Plus}, {Noscript}, and {HTTPS Everywhere}.
+        %li {Orbot} and {Orweb} let you browse the web privately and anonymously with Tor.
+        %li For savvy users, {K-9} and {APG} let you send encrypted emails.
+    .row
+      %h3#more-iphone More for Iphone
+      .carat-separator
+      %ol
+        %li According to Apple’s {Legal Process Guidelines}, Facetime calls and iMessages are end-to-end encrypted. This is significant, but Textsecure and Redphone are more secure and trustworthy
+        %li Use a PIN on your iPhone for better legal protection against searches, and some protection against thieves.
+    .row
+      %h3#more-mac More for Mac
+      .carat-separator
+      %ol
+        %li Filevault is built-in, and protects you if your Mac is lost, stolen, or sized. {Turn on Filevault.}
+        %li {GPG tools} lets you encrypt emails using Apple’s Mail.app
+    .row
+      %h3#more-windows-linux More for Windows and GNU/Linux
+      .carat-separator
+      %ol
+        %li {Firefox} syncs your passwords securely, and lets you install privacy-protecting extensions like {Adblock Plus}, {Noscript}, and {HTTPS Everywhere}.
+        %li For savvy users, {Thunderbird} and {Enigmail} let you encrypt your emails.
+        %li GNU/Linux users, install all these tools from your favorite package manager.
+
+
+

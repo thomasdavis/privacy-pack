@@ -1,0 +1,50 @@
+.btn {
+  background-color: #237cd0;
+  color: white;
+} 
+
+.separator {
+  border-bottom: 2px;
+}
+
+body {
+  font-family: "Open Sans", Verdana, Arial;
+  background: gray;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #2875c5;
+}
+
+.navigation{
+  background-color: gray;
+}
+
+.navigation > a {
+  padding: 20px;
+  color: white;
+}
+
+.splash {
+  background-color: CornflowerBlue;
+}
+
+#phone{
+  background-color: white;
+}
+
+#passwords, #windows, #more {
+  background-color: #fafcfe;
+  border-top: 1px solid #edeff1;
+  border-bottom: 1px solid #edeff1;
+}
+
+#mac, #gnu-linux {
+  background-color: white;
+}
+
+

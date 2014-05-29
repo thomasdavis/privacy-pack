@@ -1,0 +1,3 @@
+dark-blue of top of site: 2583db
+light blue under dark blue: d1e1f1
+button color: 237cd0
