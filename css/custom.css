@@ -10,18 +10,23 @@
 body {
   font-family: "Open Sans", Verdana, Arial;
   background: gray;
+  color: #385e7f;
 }
 
 h1 {
+  font-size: 10em;
   color: white;
 }
 
 h2 {
-  color: #2875c5;
+  font-size: 8em;
+  color: #2a7fcd;
 }
 
 .navigation{
-  background-color: gray;
+  background-color: #728aa4;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .navigation > a {
@@ -31,6 +36,9 @@ h2 {
 
 .splash {
   background-color: CornflowerBlue;
+  background-image:url('/images/background.jpg');
+  background-repeat:no-repeat;
+  background-position:center top; 
 }
 
 #phone{
@@ -47,4 +55,10 @@ h2 {
   background-color: white;
 }
 
+.spacer-2 {
+  height: 2em;
+}
 
+.spacer-20 {
+  height: 20em;
+}
