@@ -57,9 +57,11 @@
           .separator
           .phone-description ChatSecure gives you secure chat with Google and XMPP users.
           %br
-          %img(src="images/google-play.png")
-          %br
-          %img(src="images/app-store.png")
+          %a(href="https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im")
+            %img(src="images/google-play.png")
+          %p
+          %a(href="https://itunes.apple.com/us/app/chatsecure-encrypted-secure/id464200063?mt=8")
+            %img(src="images/app-store.png")
           .thin-separator
         .col-sm-2.text-center.vertical-separated
           %img(src="images/text-secure.png")
@@ -67,8 +69,9 @@
           .separator
           .phone-description TextSecure is strong, easy-to-use protection for your text messages.
           %br
-          %img(src="images/google-play.png")
-          %br
+          %a(href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms")
+            %img(src="images/google-play.png")
+          %p
           %img(src="images/app-store-coming-soon.png")
           .thin-separator
         .col-sm-2.text-center.vertical-separated
@@ -77,8 +80,9 @@
           .separator
           .phone-description Strong privacy for your phone calls, whenever you need it.
           %br
-          %img(src="images/google-play.png")
-          %br
+          %a(href="https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone")
+            %img(src="images/google-play.png")
+          %p
           %img(src="images/app-store-coming-soon.png")
           .thin-separator
       .row
@@ -208,9 +212,9 @@
       .spacer-2
       %a(href="#more-windows-linux") &#9660; More for GNU/Linux 
       .spacer-2
-  #more.text-center
+  #more
     .row
-      %h3#more-android More for Android
+      %h3.text-center#more-android More for Android
       .carat-separator
       %ol
         %li {Encrypt your phone} and choose a 10 digit PIN, to for very strong protection if your phone is lost, stolen, or seized.
@@ -218,19 +222,19 @@
         %li {Orbot} and {Orweb} let you browse the web privately and anonymously with Tor.
         %li For savvy users, {K-9} and {APG} let you send encrypted emails.
     .row
-      %h3#more-iphone More for Iphone
+      %h3.text-center#more-iphone More for Iphone
       .carat-separator
       %ol
         %li According to Apple’s {Legal Process Guidelines}, Facetime calls and iMessages are end-to-end encrypted. This is significant, but Textsecure and Redphone are more secure and trustworthy
         %li Use a PIN on your iPhone for better legal protection against searches, and some protection against thieves.
     .row
-      %h3#more-mac More for Mac
+      %h3.text-center#more-mac More for Mac
       .carat-separator
       %ol
         %li Filevault is built-in, and protects you if your Mac is lost, stolen, or sized. {Turn on Filevault.}
         %li {GPG tools} lets you encrypt emails using Apple’s Mail.app
     .row
-      %h3#more-windows-linux More for Windows and GNU/Linux
+      %h3.text-center#more-windows-linux More for Windows and GNU/Linux
       .carat-separator
       %ol
         %li {Firefox} syncs your passwords securely, and lets you install privacy-protecting extensions like {Adblock Plus}, {Noscript}, and {HTTPS Everywhere}.

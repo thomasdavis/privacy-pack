@@ -27,6 +27,40 @@ h2 {
   color: #2a7fcd;
 }
 
+h3 {
+  color: #237dd0;
+}
+
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+}
+ol > li:before {
+    content:counter(li) " |"; /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    color:#c6d8db;
+    font-weight: bold;
+    text-align:center;
+}
+li ol, li ul {margin-top:6px;} 
+ol ol li:last-child {margin-bottom:0;}
+
 .navigation{
   background-color: #728aa4;
   padding-top: 2em;
@@ -47,6 +81,15 @@ h2 {
 
 #phone{
   background-color: white;
+}
+
+#more {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+li {
+  border-bottom: 1px dashed #d1e1f1;
 }
 
 #passwords, #windows, #more {
@@ -75,7 +118,7 @@ h2 {
   border: none;
 }
 
-.separator {
+.separator, .carat-separator{
   border-bottom: 1px solid #d1e1f1;
 }
 
@@ -128,4 +171,10 @@ h2 {
     border-bottom: 1px solid #d1e1f1;
   }
 
+}
+
+@media all and (min-width: 1400px) {
+  .splash {
+    background-size: 100%;
+  }
 }
