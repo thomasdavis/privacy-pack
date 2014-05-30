@@ -3,15 +3,14 @@
   %title Reset The Net - Privacy Pack
   %link(rel="stylesheet" type="text/css" href="css/bootstrap-theme.css")
   %link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
-  %link(rel="stylesheet" type="text/css" href="css/custom.css")
   %script(src="js/jquery.js")
   %script(src="js/bootstrap.js")
 
   %script(type="text/javascript" src="//use.typekit.net/gdx0qlb.js")
   %script(type="text/javascript") try{Typekit.load();}catch(e){}
+  %link(rel="stylesheet" type="text/css" href="css/custom.css")
 
-%body
-
+%body.tk-proxima-nova
   .splash
     .container
       .row.text-center
@@ -51,127 +50,164 @@
           %p.text-center
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       .row
-        .col-sm-4.text-center
+        .col-sm-offset-3.col-sm-2.text-center.vertical-separated
 
           %img(src="images/chat-secure-logo.png")
           %h3 ChatSecure
           .separator
-          ChatSecure gives you secure chat with Google and XMPP users.
-          .separator
+          .phone-description ChatSecure gives you secure chat with Google and XMPP users.
+          %br
           %img(src="images/google-play.png")
           %br
           %img(src="images/app-store.png")
-        .col-sm-4.text-center
+          .thin-separator
+        .col-sm-2.text-center.vertical-separated
           %img(src="images/text-secure.png")
           %h3 TextSecure
           .separator
-          TextSecure is strong, easy-to-use protection for your text messages.
-          .separator
+          .phone-description TextSecure is strong, easy-to-use protection for your text messages.
+          %br
           %img(src="images/google-play.png")
           %br
           %img(src="images/app-store-coming-soon.png")
-        .col-sm-4.text-center
+          .thin-separator
+        .col-sm-2.text-center.vertical-separated
           %img(src="images/red-phone.png")
           %h3 RedPhone
           .separator
-          Strong privacy for your phone calls, whenever you need it.
-          .separator
+          .phone-description Strong privacy for your phone calls, whenever you need it.
+          %br
           %img(src="images/google-play.png")
           %br
           %img(src="images/app-store-coming-soon.png")
-
+          .thin-separator
       .row
         .col-sm-2.col-sm-offset-5.text-center
+          .spacer-2
           %a(href="#more-android") &#9660; More For Android
           | 
           %a(href="#more-iphone") &#9660; More For Iphone
+          .spacer-2
+          .thin-separator
 
   #passwords
     .container
       .row.text-center
         %h2 Your Passwords
-        Securing your passwords is key to protecting yourself online.
-        It takes minutes; do it now!
+        %p 
+          Securing your passwords is key to protecting yourself online.
+          It takes minutes; do it now!
       .row
-        .col-sm-6.text-center
+        .col-sm-3.col-sm-offset-3.text-center.vertical-separated
           %img(src="images/strong-password.png")
           %h3 Unique Passwords
           .dashed-separator
           Do you use the same password everywhere?  Go change it now, starting with your email and Facebook.  Use LastPass, or write it down. 
-        .col-sm-6.text-center
+          .thin-separator
+        .col-sm-3.text-center
           %img(src="images/two-factor-auth.png")
           %h3 Double protection
           .dashed-separator
           Add a second layer of protection to your accounts on {Google}, {Facebook}, {Twitter}, {Yahoo}, {Dropbox}, and {other services} with 2-factor auth.
+          .thin-separator
       .row.text-center
+        .spacer-2
         %a(href="#") &#9660; More on Passwords 
+        .spacer-2
 
   #mac.text-center
     .row
       %h2 Your Mac
-      Securing your chats is easy. So is private, anonymous browsing. Try both. 
+      %p Securing your chats is easy. So is private, anonymous browsing. Try both. 
     .row
-      .col-sm-6
+      .col-sm-3.col-sm-offset-3.vertical-separated
         %img(src="images/adium-logo.png")
         %h3 Adium
         .dashed-separator
         Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %br
         %button.btn DOWNLOAD ADIUM
+        %br
         %a(href="#") Learn more!
-      .col-sm-6
+        .thin-separator
+      .col-sm-3
         %img(src="images/tor-logo.png")
         %h3 Tor
         .dashed-separator
         Tor prevents people from learning your location or browsing habits.
+        %br
         %button.btn DOWNLOAD TOR
+        %br
         %a(href="#") Learn more!
+        .thin-separator
     .row
+      .spacer-2
       %a(href="#more-mac") &#9660; More for Mac 
+      .spacer-2
+      .thin-separator
 
   #windows.text-center
     .row
       %h2 Windows 
-      Secure chats is pretty easy on Windows. Private, anonymous browsing is easier. Try both. 
+      %p Secure chats is pretty easy on Windows. Private, anonymous browsing is easier. Try both. 
     .row
-      .col-sm-6
+      .col-sm-3.col-sm-offset-3.vertical-separated
         %img(src="images/pidgin-logo.png")
         %h3 Pidgin
         .dashed-separator
         Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %br
         %button.btn DOWNLOAD PIDGIN 
+        %br
         %a(href="#") Learn more!
-      .col-sm-6
+        .thin-separator
+      .col-sm-3
         %img(src="images/tor-logo.png")
         %h3 Tor
         .dashed-separator
         Tor prevents people from learning your location or browsing habits.
+        %br
         %button.btn DOWNLOAD TOR
+        %br
         %a(href="#") Learn more!
+        .thin-separator
     .row
+      .spacer-2
       %a(href="#more-windows-linux") &#9660; More for Windows 
+      .spacer-2
+      .thin-separator
 
   #gnu-linux.text-center
     .row
       %h2 GNU/Linux 
-      GNU/Linux users probably have these tools already. 
-      If not, install them with your package manager!
+      %p
+        GNU/Linux users probably have these tools already. 
+        If not, install them with your package manager!
     .row
-      .col-sm-6
+      .col-sm-3.col-sm-offset-3.vertical-separated
         %img(src="images/pidgin-logo.png")
         %h3 Pidgin
         .dashed-separator
         Encrypted chats for Facebook, Google, Duck Duck Go, and more.
+        %br
         %button.btn DOWNLOAD PIDGIN 
+        %br
         %a(href="#") Learn more!
-      .col-sm-6
+        .thin-separator
+      .col-sm-3
         %img(src="images/tor-logo.png")
         %h3 Tor
         .dashed-separator
         Tor prevents people from learning your location or browsing habits.
+        %br
         %button.btn DOWNLOAD TOR
+        %br
         %a(href="#") Learn more!
+        .thin-separator
     .row
+      .spacer-2
       %a(href="#more-windows-linux") &#9660; More for GNU/Linux 
+      .spacer-2
   #more.text-center
     .row
       %h3#more-android More for Android

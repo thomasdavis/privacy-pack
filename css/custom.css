@@ -7,8 +7,12 @@
   border-bottom: 2px;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
-  font-family: "Open Sans", Verdana, Arial;
+  font-family: proxima-nova, "Open Sans", Arial;
   background: gray;
   color: #385e7f;
 }
@@ -19,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 8em;
+  font-size: 6em;
   color: #2a7fcd;
 }
 
@@ -36,7 +40,7 @@ h2 {
 
 .splash {
   background-color: CornflowerBlue;
-  background-image:url('/images/background.jpg');
+  background-image:url('../images/background.jpg');
   background-repeat:no-repeat;
   background-position:center top; 
 }
@@ -61,4 +65,67 @@ h2 {
 
 .spacer-20 {
   height: 20em;
+}
+
+.vertical-separated {
+  border-right: 1px solid #d1e1f1;
+}
+
+.vertical-separated:last-child {
+  border: none;
+}
+
+.separator {
+  border-bottom: 1px solid #d1e1f1;
+}
+
+.dashed-separator {
+  border-bottom: 1px dashed #d1e1f1;
+}
+
+@media all and (max-width: 1000px) and (min-width: 750px) {
+  .splash {
+    background-position:center 50%; 
+  }
+
+
+  h1 {
+    font-size: 6em;
+  }
+
+  h3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .phone-description { 
+    min-height: 120px;
+  }
+}
+
+@media all and (max-width: 750px) {  
+  .splash {
+    background-position:center 90%; 
+  }
+
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .separator {
+    border: none;
+  }
+  .thin-separator {
+    border-bottom: 1px solid #d1e1f1;
+  }
+
 }
