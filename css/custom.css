@@ -3,6 +3,11 @@
   color: white;
 } 
 
+.btn-share {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .separator {
   border-bottom: 2px;
 }
@@ -77,6 +82,12 @@ ol ol li:last-child {margin-bottom:0;}
   background-image:url('../images/background.jpg');
   background-repeat:no-repeat;
   background-position:center top; 
+}
+
+#sharing-links {
+  position: absolute;
+  left: 0px;
+  top: 150%;
 }
 
 #phone{

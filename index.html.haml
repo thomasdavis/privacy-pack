@@ -6,12 +6,23 @@
   %script(src="js/jquery.js")
   %script(src="js/bootstrap.js")
   %script(src="js/organization-picker.js")
+  %script(src="js/facebook-sdk.js")
+  %script(src="js/sharing.js")
 
   %script(type="text/javascript" src="//use.typekit.net/gdx0qlb.js")
   %script(type="text/javascript") try{Typekit.load();}catch(e){}
   %link(rel="stylesheet" type="text/css" href="css/custom.css")
 
 %body.tk-proxima-nova
+  #sharing-links
+    %a(href="https://twitter.com/share?url=https%3A%2F%2Fpack.resetthenet.org&text=Protect%20the%20freedom%20of%20the%20internet%20-%20encrypt%20yourself:" target="_blank")    
+      %img.btn-share#share-twitter(src="images/share-twitter.png") 
+    %br
+    %img.btn-share#share-facebook(src="images/share-facebook.png") 
+    %br
+    %a(href="https://plus.google.com/share?url={pack.resetthenet.org}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;")
+      %img.btn-share#share-google(src="images/share-google.png") 
+
   .splash
     .container
       .row.text-center
