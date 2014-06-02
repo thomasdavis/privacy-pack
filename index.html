@@ -5,6 +5,7 @@
   <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
   <script src='js/jquery.js'></script>
   <script src='js/bootstrap.js'></script>
+  <script src='js/organization-picker.js'></script>
   <script src='//use.typekit.net/gdx0qlb.js' type='text/javascript'></script>
   <script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
   <link href='css/custom.css' rel='stylesheet' type='text/css'>
@@ -24,12 +25,37 @@
         </div>
         <div class='col-sm-6 col-sm-offset-3'>
           <div class='spacer-2'></div>
-          <form class='form-inline' role='form'>
-            <div class='form-group'>
-              <input class='form-control' placeholder='Your email' type='email'>
-              <button class='btn'>Submit</button>
+          <div id='thank-you-message'></div>
+          <form action='https://platformzz.herokuapp.com/api/movements/1/salsa' class='form-inline group' method='POST' role='form'>
+            <div class='hidden'>
+              <input name='csrfmiddlewaretoken' type='hidden' value='wlJCVZjeWLyeEsMjL1HzzsuMV6XHluqL'>
+              <input name='member[language]' type='hidden' value='en'>
+              <input name='salsa' type='hidden' value='true'>
+              <input name='language_id' type='hidden' value='en'>
+              <input name='member[movement_id]' type='hidden' value='1'>
+              <input name='member[user_agent]' type='hidden' value=''>
+              <input name='member[ip_address]' type='hidden' value=''>
+              <input name='guard' placeholder='Please leave this field blank' style='display: none;' type='text'>
+              <input name='action' type='hidden' value='1'>
+              <label for='hp_enabled'></label>
+              <input checked='checked' id='hp_enabled' name='hp_enabled' type='checkbox'>Do not uncheck this box</input>
+              <label for='hp_disabled'></label>
+              <input id='hp_disabled' name='hp_disabled' type='checkbox'>Do not check this box</input>
+              <input name='tag' type='hidden' value='reset-the-net'>
             </div>
+            <label class='hidden' for='id_email'>Email Address</label>
+            <input class='form-control' id='id_email' name='member[email]' pattern='^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[a-z]{2,4}$' placeholder='Email' required type='email'>
+            <button class='btn btn-success' type='submit'>Sign Up</button>
           </form>
+          <div class='disclaimer'>
+            <p>
+              <a href='http://www.fightforthefuture.org/'>Fight for the Future</a>
+              and
+              <a href='http://www.thecenterforrights.org/'>Center for Rights</a>
+              will contact you about future campaigns.
+              <a href='http://www.fightforthefuture.org/privacy/'>Privacy Policy</a>
+            </p>
+          </div>
           <div class='spacer-2'></div>
         </div>
       </div>

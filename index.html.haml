@@ -5,6 +5,7 @@
   %link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
   %script(src="js/jquery.js")
   %script(src="js/bootstrap.js")
+  %script(src="js/organization-picker.js")
 
   %script(type="text/javascript" src="//use.typekit.net/gdx0qlb.js")
   %script(type="text/javascript") try{Typekit.load();}catch(e){}
@@ -24,10 +25,35 @@
           Morbi et nulla egestas, luctus enim et, adipscing leo et iam.
         .col-sm-6.col-sm-offset-3
           .spacer-2
-          %form.form-inline(role="form")
-            .form-group
-              %input.form-control(type="email" placeholder="Your email")
-              %button.btn Submit
+          #thank-you-message
+          %form.form-inline(role="form" action="https://platformzz.herokuapp.com/api/movements/1/salsa" method="POST" class="group")
+            .hidden
+              %input(type='hidden' name='csrfmiddlewaretoken' value='wlJCVZjeWLyeEsMjL1HzzsuMV6XHluqL')
+              %input(type="hidden" name="member[language]" value="en")
+              %input(type="hidden" name="salsa" value="true")
+              %input(type="hidden" name="language_id" value="en")
+              %input(type="hidden" name="member[movement_id]" value="1")
+              %input(type="hidden" name="member[user_agent]" value="")
+              %input(type="hidden" name="member[ip_address]" value="")
+              %input(type="text" name="guard" placeholder="Please leave this field blank" style="display: none;")
+              %input(type="hidden" name="action" value="1")
+              %label(for="hp_enabled")
+              %input(type="checkbox" checked="checked" id="hp_enabled" name="hp_enabled") Do not uncheck this box
+              %label(for="hp_disabled")
+              %input(type="checkbox" id="hp_disabled" name="hp_disabled") Do not check this box
+              %input(type="hidden" name="tag" value="reset-the-net")
+            %label.hidden(for="id_email") Email Address
+            %input.form-control#id_email(type="email" name="member[email]" placeholder="Email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required)
+            %button.btn.btn-success(type="submit") Sign Up
+            
+          .disclaimer
+            %p
+              %a(href="http://www.fightforthefuture.org/") Fight for the Future
+              and 
+              %a(href="http://www.thecenterforrights.org/") Center for Rights
+              will contact you about future campaigns. 
+              %a(href="http://www.fightforthefuture.org/privacy/")Privacy Policy
+
           .spacer-2
 
   .navigation.text-center
