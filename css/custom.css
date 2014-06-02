@@ -184,6 +184,13 @@ li {
 
 }
 
+@media all and (max-width: 800px) {
+  .btn-share {
+    width: 100px;
+  }
+
+}
+
 @media all and (min-width: 1400px) {
   .splash {
     background-size: 100%;
