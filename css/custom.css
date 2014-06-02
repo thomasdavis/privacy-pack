@@ -189,3 +189,10 @@ li {
     background-size: 100%;
   }
 }
+
+@media all and (min-width: 1500px) {
+  .spacer-20 {
+    height: 30em;
+  }
+
+}
