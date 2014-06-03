@@ -8,6 +8,10 @@
   cursor: hand;
 }
 
+.disclaimer {
+  margin: 18px 0 0;
+}
+
 .separator {
   border-bottom: 2px;
 }
