@@ -4,6 +4,16 @@
   font-size: 14pt;
 } 
 
+.btn:hover, .app-store:hover {
+  opacity: 0.6;
+}
+
+.btn-download {
+  font-size: 11pt;
+  letter-spacing: 3pt;
+  margin-bottom: 6px;
+}
+
 a {
   font-weight: bold;
 }
