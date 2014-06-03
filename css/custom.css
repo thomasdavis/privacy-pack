@@ -1,7 +1,16 @@
 .btn {
   background-color: #237cd0;
   color: white;
+  font-size: 14pt;
 } 
+
+a {
+  font-weight: bold;
+}
+
+.form-control {
+  font-size: 15pt;
+}
 
 .btn-share {
   cursor: pointer;
@@ -14,6 +23,11 @@
 
 .separator {
   border-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.section-links {
+  font-size: 25pt;
 }
 
 img {
@@ -22,22 +36,24 @@ img {
 
 body {
   font-family: proxima-nova, "Open Sans", Arial;
+  font-size: 20pt;
   background: white;
   color: #385e7f;
 }
 
 h1 {
-  font-size: 10em;
+  font-size: 112px;
   color: white;
 }
 
 h2 {
-  font-size: 6em;
+  font-size: 78px;
   color: #2a7fcd;
 }
 
 h3 {
   color: #237dd0;
+  font-size: 30px;
 }
 
 ol {
@@ -119,11 +135,11 @@ li {
 }
 
 .spacer-2 {
-  height: 2em;
+  height: 1em;
 }
 
 .spacer-20 {
-  height: 20em;
+  height: 10em;
 }
 
 .vertical-separated {
@@ -140,44 +156,65 @@ li {
 
 .dashed-separator {
   border-bottom: 1px dashed #d1e1f1;
+  margin-bottom: 10px;
 }
 
 @media all and (max-width: 1000px) and (min-width: 750px) {
-  .splash {
-    background-position:center 50%; 
+
+  #id_email {
+    width: 70%;
   }
 
+  .splash { 
+    background-position: 50%, -30%;
+  }
+
+  .spacer-20 {
+    height: 20em;
+  }
+  
 
   h1 {
-    font-size: 6em;
+    font-size: 78pt;
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 12pt;
     font-weight: bold;
+  }
+  
+  body {
+    font-size: 11pt;
   }
 
   .phone-description { 
     min-height: 120px;
   }
+  .section-links {
+    font-size: 11pt;
+  }
+  .btn, .form-control {
+    font-size: 10pt;
+  }
 }
 
 @media all and (max-width: 750px) {  
-  .splash {
-    background-position:center 90%; 
-  }
 
+  .spacer-20 {
+    height: 25em;
+  }
 
   .container {
     padding-left: 30px;
     padding-right: 30px;
   }
   h1 {
-    font-size: 4em;
+    font-size: 60px;
+    padding-top: 50px;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 40px;
     font-weight: bold;
   }
   .separator {
@@ -185,6 +222,20 @@ li {
   }
   .thin-separator {
     border-bottom: 1px solid #d1e1f1;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  .phone-description { 
+    min-height: 120px;
+  }
+  .section-links {
+    font-size: 11pt;
+  }
+  .btn, .form-control {
+    font-size: 10pt;
   }
 
 }
@@ -196,15 +247,24 @@ li {
 
 }
 
+@media all and (max-width: 1200px) and (min-width: 1000px) {  
+  h3 {
+    font-size: 25px;
+  }
+}
+
 @media all and (min-width: 1400px) {
   .splash {
     background-size: 100%;
+  }
+  h1 { 
+    padding-top: 70px;
   }
 }
 
 @media all and (min-width: 1500px) {
   .spacer-20 {
-    height: 30em;
+    height: 17em;
   }
 
 }
