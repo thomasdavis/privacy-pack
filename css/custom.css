@@ -6,6 +6,7 @@
 
 .btn:hover, .app-store:hover {
   opacity: 0.6;
+  color: #fff;
 }
 
 .btn-download {
