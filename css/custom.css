@@ -199,6 +199,10 @@ li {
 }
 
 @media all and (max-width: 750px) {  
+  .vertical-separated {
+    border-right: none;
+  }
+
 
   .spacer-20 {
     height: 25em;
