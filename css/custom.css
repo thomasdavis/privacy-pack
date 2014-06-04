@@ -1,29 +1,75 @@
-body {
-  font-family: proxima-nova, "Open Sans", Arial;
-  font-size: 20px;
-  background: white;
-  color: #385e7f;
+.btn {
+  background-color: #237cd0;
+  color: white;
+  font-size: 14pt;
+} 
+
+.btn:hover, .app-store:hover {
+  opacity: 0.6;
+  color: #fff;
+}
+
+.btn-download {
+  font-size: 11pt;
+  letter-spacing: 3pt;
+  margin-bottom: 6px;
+}
+
+a {
+  font-weight: bold;
+}
+
+.form-control {
+  font-size: 15pt;
+}
+
+.btn-share {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.disclaimer {
+  margin: 18px 0 0;
+  font-size: 8pt;
+}
+
+.disclaimer a {
+  font-size: 8pt;
+}
+
+.separator {
+  border-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.section-links {
+  font-size: 25pt;
 }
 
 img {
   max-width: 100%;
 }
 
+body {
+  font-family: proxima-nova, "Open Sans", Arial;
+  font-size: 20pt;
+  background: white;
+  color: #385e7f;
+}
+
 h1 {
-  font-size: 5.6em;
+  font-size: 112px;
   color: white;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 h2 {
-  font-size: 3.9em;
+  font-size: 78px;
   color: #2a7fcd;
 }
 
 h3 {
-  font-size: 1.5em;
   color: #237dd0;
+  font-size: 30px;
 }
 
 ol {
@@ -53,52 +99,8 @@ ol > li:before {
     font-weight: bold;
     text-align:center;
 }
-li ol, li ul {margin-top:6px;}
+li ol, li ul {margin-top:6px;} 
 ol ol li:last-child {margin-bottom:0;}
-
-.btn {
-  background-color: #237cd0;
-  color: white;
-  font-size: 1em;
-}
-
-.btn:hover, .app-store:hover {
-  opacity: 0.6;
-  color: #fff;
-}
-
-.btn-download {
-  font-size: 0.7857em;
-  letter-spacing: 3pt;
-  margin-bottom: 6px;
-}
-
-a {
-  font-weight: bold;
-}
-
-.form-control {
-  font-size: 15pt;
-}
-
-.btn-share {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.disclaimer {
-  margin: 18px 0 0;
-  font-size: 0.8em;
-}
-
-.separator {
-  border-bottom: 2px;
-  margin-bottom: 10px;
-}
-
-.section-links {
-  font-size: 25pt;
-}
 
 .navigation{
   background-color: #728aa4;
@@ -115,7 +117,7 @@ a {
   background-color: #d2e1f0;
   background-image:url('../images/background.jpg');
   background-repeat:no-repeat;
-  background-position:center top;
+  background-position:center top; 
 }
 
 #sharing-links {
@@ -153,7 +155,7 @@ li {
 }
 
 .spacer-20 {
-  height: 14em;
+  height: 10em;
 }
 
 .vertical-separated {
@@ -173,25 +175,20 @@ li {
   margin-bottom: 10px;
 }
 
-.sub-heading {
-  padding: 1em 0;
-  font-size: 1em;
-}
-
 @media all and (max-width: 1000px) and (min-width: 750px) {
 
   #id_email {
     width: 70%;
   }
 
-  .splash {
+  .splash { 
     background-position: 50%, -30%;
   }
 
   .spacer-20 {
     height: 20em;
   }
-
+  
 
   h1 {
     font-size: 78pt;
@@ -201,12 +198,12 @@ li {
     font-size: 12pt;
     font-weight: bold;
   }
-
+  
   body {
     font-size: 11pt;
   }
 
-  .phone-description {
+  .phone-description { 
     min-height: 120px;
   }
   .section-links {
@@ -217,7 +214,7 @@ li {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 750px) {  
   .vertical-separated {
     border-right: none;
   }
@@ -251,7 +248,7 @@ li {
     font-size: 11pt;
   }
 
-  .phone-description {
+  .phone-description { 
     min-height: 120px;
   }
   .section-links {
@@ -270,7 +267,7 @@ li {
 
 }
 
-@media all and (max-width: 1200px) and (min-width: 1000px) {
+@media all and (max-width: 1200px) and (min-width: 1000px) {  
   h3 {
     font-size: 25px;
   }
@@ -280,8 +277,8 @@ li {
   .splash {
     background-size: 100%;
   }
-  h1 {
-    padding-top: 0.5em;
+  h1 { 
+    padding-top: 70px;
   }
 }
 
