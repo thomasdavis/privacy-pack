@@ -128,4 +128,51 @@ $(document).ready(function(){
       });
       return false;
    });
+
+  // Bring down share counts
+  var shareTotals = {};
+  var shareUrlCount = 0;
+  var showShareTotals = function () {
+    if(shareUrlCount === 2) {
+      var completeShareTotals = {
+        facebook: shareTotals.pack.facebook + shareTotals.www.facebook,
+        googleplus: shareTotals.pack.googleplus + shareTotals.www.googleplus,
+        twitter: shareTotals.pack.twitter + shareTotals.www.twitter
+      }
+
+      $.each(completeShareTotals, function(network, value) {
+          var count = value;
+          if (count / 10000 > 1) {
+              count = Math.ceil(count / 1000) + 'k'
+          }
+          $('[data-network="' + network + '"]').text(count);
+      })
+    };
+
+  };
+  var shareUrl =  'https://www.resetthenet.org';
+  $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
+      success: function(res, err) {
+        shareUrlCount++;
+        shareTotals['www'] = res;
+        showShareTotals();
+
+      },
+      dataType: 'jsonp',
+      cache         : true,
+      jsonpCallback : 'wwwCallback'
+  });
+
+  var shareUrl =  'https://pack.resetthenet.org';
+  $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
+      success: function(res, err) {
+        shareUrlCount++;
+        shareTotals['pack'] = res;
+
+        showShareTotals();
+      },
+      dataType: 'jsonp',
+      cache         : true,
+      jsonpCallback : 'packCallback'
+  });
 });

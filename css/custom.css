@@ -2,7 +2,7 @@
   background-color: #237cd0;
   color: white;
   font-size: 14px;
-} 
+}
 
 .splash .btn {
   font-size: 18px;
@@ -107,7 +107,7 @@ ol > li:before {
     font-weight: bold;
     text-align:center;
 }
-li ol, li ul {margin-top:6px;} 
+li ol, li ul {margin-top:6px;}
 ol ol li:last-child {margin-bottom:0;}
 
 .navigation{
@@ -125,7 +125,7 @@ ol ol li:last-child {margin-bottom:0;}
   background-color: #d2e1f0;
   background-image:url('../images/background.jpg');
   background-repeat:no-repeat;
-  background-position:center top; 
+  background-position:center top;
 }
 
 #sharing-links {
@@ -193,7 +193,7 @@ li {
   #id_email {
     width: 70%;
   }
-  .splash { 
+  .splash {
     background-position: center 95%;
   }
   .spacer-20 {
@@ -209,7 +209,7 @@ li {
   body {
     font-size: 16px;
   }
-  .phone-description { 
+  .phone-description {
     min-height: 130px;
   }
   .section-links {
@@ -229,14 +229,14 @@ li {
     }
 }
 
-@media all and (max-width: 767px) {  
+@media all and (max-width: 767px) {
   .vertical-separated {
     border-right: none;
   }
   .spacer-20 {
     height: 15em;
   }
-  .splash { 
+  .splash {
     background-position: center -120px;
   }
   h1 {
@@ -284,6 +284,54 @@ li {
   }
 }
 
+#sharing-links a {
+  text-decoration: none;
+}
+#sharing-links a .btn-share {
+  text-decoration: none;
+  float: left;
+}
+.arrow_box {
+	position: relative;
+	background: #fff;
+	border: 1px solid #ccc;
+  float: left;
+  margin-left: 7px;
+  border-radius: 5px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  margin-top: 2px;
+  width: 61px;
+  text-align: center;
+}
+.arrow_box .share-total {
+  padding: 0 10px 0 10px;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.arrow_box:before {
+	border-color: rgba(204, 204, 204, 0);
+	border-right-color: #ccc;
+	border-width: 6px;
+	margin-top: -6px;
+}
+
 @media all and (max-width: 992px) {
   #sharing-links {
     display: none;
@@ -291,22 +339,22 @@ li {
 }
 
 @media all and (min-width: 992px) {
-  .phone-description { 
+  .phone-description {
     min-height: 145px;
   }
   .spacer-20 {
-    height: 14em; 
+    height: 14em;
   }
-  h1 { 
+  h1 {
     padding-top: 70px;
   }
 }
 
-@media all and (min-width: 992px) and (max-width: 1199px)  {  
+@media all and (min-width: 992px) and (max-width: 1199px)  {
   h3 {
     font-size: 25px;
   }
-  .phone-description { 
+  .phone-description {
     min-height: 127px;
     font-size: 18px;
   }
@@ -329,7 +377,7 @@ li {
     background-size: 100%;
   }
   .spacer-20 {
-    height: 13em; 
+    height: 13em;
   }
 }
 @media all and (max-width: 1199px) {
