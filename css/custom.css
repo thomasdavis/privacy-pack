@@ -186,10 +186,10 @@ li {
     width: 70%;
   }
   .splash { 
-    background-position: center 80%;
+    background-position: center 95%;
   }
   .spacer-20 {
-    height: 25em;
+    height: 14em;
   }
   h1 {
     font-size: 78px;
@@ -199,7 +199,7 @@ li {
     font-weight: bold;
   }
   body {
-    font-size: 11px;
+    font-size: 16px;
   }
   .phone-description { 
     min-height: 130px;
@@ -207,7 +207,7 @@ li {
   .section-links {
     font-size: 11px;
   }
-  .btn, .form-control {
+  .btn {
     font-size: 10px;
   }
   .btn-download {
@@ -220,15 +220,18 @@ li {
     border-right: none;
   }
   .spacer-20 {
-    height: 28em;
+    height: 15em;
+  }
+  .splash { 
+    background-position: center -120px;
   }
   .container {
     padding-left: 30px;
     padding-right: 30px;
   }
   h1 {
-    font-size: 60px;
-    padding-top: 50px;
+    font-size: 42px;
+    padding-top: 10px;
   }
   h2 {
     font-size: 40px;
@@ -242,20 +245,29 @@ li {
   }
 
   body {
-    font-size: 11px;
+    font-size: 18px;
   }
 
   .section-links {
     font-size: 11px;
   }
-  .btn, .form-control {
+  .btn {
     font-size: 10px;
+  }
+  .splash .btn {
+    margin-top: 10px;
+  }
+  .btn-share {
+    width: 100px;
+  }
+  .navigation {
+    line-height: 1.9;
   }
 }
 
-@media all and (max-width: 767px) {
-  .btn-share {
-    width: 100px;
+@media all and (max-width: 992px) {
+  #sharing-links {
+    display: none;
   }
 }
 
@@ -264,16 +276,20 @@ li {
     min-height: 145px;
   }
   .spacer-20 {
-    height: 17em; 
+    height: 14em; 
+  }
+  h1 { 
+    padding-top: 70px;
   }
 }
 
-@media all and (min-width: 1000px) and (max-width: 1200px)  {  
+@media all and (min-width: 992px) and (max-width: 1199px)  {  
   h3 {
     font-size: 25px;
   }
   .phone-description { 
-    min-height: 300px;
+    min-height: 127px;
+    font-size: 18px;
   }
   .splash {
     font-size: 18px;
@@ -284,13 +300,13 @@ li {
   .splash {
     background-size: 100%;
   }
-  h1 { 
-    padding-top: 70px;
-  }
   .spacer-20 {
     height: 13em; 
   }
 }
 
-@media all and (min-width: 1500px) {
+@media all and (max-width: 1199px) {
+  .navigation > a {
+    padding: 8px;
+  }
 }
