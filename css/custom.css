@@ -10,7 +10,7 @@
 }
 
 .btn-download {
-  font-size: 11pt;
+  font-size: 9pt;
   letter-spacing: 3pt;
   margin-bottom: 6px;
 }
@@ -211,6 +211,9 @@ li {
   }
   .btn, .form-control {
     font-size: 10pt;
+  }
+  .btn-download {
+    font-size: 6pt;
   }
 }
 
