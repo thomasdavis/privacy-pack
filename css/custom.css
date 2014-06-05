@@ -1,7 +1,7 @@
 .btn {
   background-color: #237cd0;
   color: white;
-  font-size: 14pt;
+  font-size: 14px;
 } 
 
 .btn:hover, .app-store:hover {
@@ -10,8 +10,8 @@
 }
 
 .btn-download {
-  font-size: 9pt;
-  letter-spacing: 3pt;
+  font-size: 9px;
+  letter-spacing: 3px;
   margin-bottom: 6px;
 }
 
@@ -20,7 +20,7 @@ a {
 }
 
 .form-control {
-  font-size: 15pt;
+  font-size: 15px;
 }
 
 .btn-share {
@@ -30,12 +30,9 @@ a {
 
 .disclaimer {
   margin: 18px 0 0;
-  font-size: 8pt;
+  font-size: 13px;
 }
 
-.disclaimer a {
-  font-size: 8pt;
-}
 
 .separator {
   border-bottom: 2px;
@@ -43,7 +40,7 @@ a {
 }
 
 .section-links {
-  font-size: 25pt;
+  font-size: 25px;
 }
 
 img {
@@ -52,7 +49,7 @@ img {
 
 body {
   font-family: proxima-nova, "Open Sans", Arial;
-  font-size: 20pt;
+  font-size: 20px;
   background: white;
   color: #385e7f;
 }
@@ -191,29 +188,29 @@ li {
   
 
   h1 {
-    font-size: 78pt;
+    font-size: 78px;
   }
 
   h3 {
-    font-size: 12pt;
+    font-size: 12px;
     font-weight: bold;
   }
   
   body {
-    font-size: 11pt;
+    font-size: 11px;
   }
 
   .phone-description { 
     min-height: 130px;
   }
   .section-links {
-    font-size: 11pt;
+    font-size: 11px;
   }
   .btn, .form-control {
-    font-size: 10pt;
+    font-size: 10px;
   }
   .btn-download {
-    font-size: 6pt;
+    font-size: 6px;
   }
 }
 
@@ -248,14 +245,14 @@ li {
   }
 
   body {
-    font-size: 11pt;
+    font-size: 11px;
   }
 
   .section-links {
-    font-size: 11pt;
+    font-size: 11px;
   }
   .btn, .form-control {
-    font-size: 10pt;
+    font-size: 10px;
   }
 
 
@@ -273,7 +270,7 @@ li {
 @media all and (min-width: 1000px) {
 
   .phone-description { 
-    min-height: 275px;
+    min-height: 145px;
   }
 
 }
