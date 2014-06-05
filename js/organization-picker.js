@@ -74,20 +74,24 @@ $(function() {
   $('.disclaimer p').html(organization.disclaimer);
 });
 
-// If there are failures when submiting the email signup, we will post to a second server to simply backup the submission
-var logDataFallback = function (data) {
-  var dbData = {
-    email: data.data['member[email]'],
-    org: data.data.tag
-  };
-  $.ajax('https://email-congress.herokuapp.com/email', {
-    data: dbData,
-    method: 'POST',
-    success: function(response){
-    },
-    dataType: 'json'
-  });
 
+// If there are failures when submiting the email signup, we will post to a second server to simply backup the submission
+var emailLogged = false;
+var logDataFallback = function (data) {
+  if(!emailLogged) {
+    emailLogged = true;
+    var dbData = {
+      email: data.data['member[email]'],
+      org: data.data.tag
+    };
+    $.ajax('https://email-congress.herokuapp.com/email', {
+      data: dbData,
+      method: 'POST',
+      success: function(response){
+      },
+      dataType: 'json'
+    });
+  }
 }
 
 $(document).ready(function(){
@@ -99,6 +103,11 @@ $(document).ready(function(){
      $('#thank-you-message').append("<p> Thanks for signing up! </p>");
      $form.remove();
      $('.disclaimer').remove();
+
+    // Make a timeout incase the request hangs
+    setTimeout(function () {
+      logDataFallback({data: $form.serializeObject()});
+    }, 5000)
 
       $.ajax($(this).attr('action'), {
         data: $(this).serialize(),
