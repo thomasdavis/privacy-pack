@@ -204,7 +204,7 @@ li {
   }
 
   .phone-description { 
-    min-height: 120px;
+    min-height: 130px;
   }
   .section-links {
     font-size: 11pt;
@@ -251,15 +251,15 @@ li {
     font-size: 11pt;
   }
 
-  .phone-description { 
-    min-height: 120px;
-  }
   .section-links {
     font-size: 11pt;
   }
   .btn, .form-control {
     font-size: 10pt;
   }
+
+
+
 
 }
 
@@ -270,10 +270,24 @@ li {
 
 }
 
+@media all and (min-width: 1000px) {
+
+  .phone-description { 
+    min-height: 275px;
+  }
+
+}
+
 @media all and (max-width: 1200px) and (min-width: 1000px) {  
   h3 {
     font-size: 25px;
   }
+
+  .phone-description { 
+    min-height: 300px;
+  }
+
+
 }
 
 @media all and (min-width: 1400px) {
