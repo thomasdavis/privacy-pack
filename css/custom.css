@@ -180,6 +180,11 @@ li {
   margin-bottom: 10px;
 }
 
+.triplets-container {
+  max-width: 69%;
+  margin:0 auto;
+}
+
 
 @media all and (min-width: 768px) and (max-width: 991px)  {
   #id_email {
@@ -195,7 +200,7 @@ li {
     font-size: 78px;
   }
   h3 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
   }
   body {
@@ -225,10 +230,6 @@ li {
   .splash { 
     background-position: center -120px;
   }
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   h1 {
     font-size: 42px;
     padding-top: 10px;
@@ -241,6 +242,7 @@ li {
     border: none;
   }
   .thin-separator {
+    margin-top: 30px;
     border-bottom: 1px solid #d1e1f1;
   }
 
@@ -262,6 +264,14 @@ li {
   }
   .navigation {
     line-height: 1.9;
+  }
+  .triplets-container {
+    max-width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .triplets-container .col-sm-4 {
+    margin-bottom:40px;
   }
 }
 
@@ -294,6 +304,8 @@ li {
   .splash {
     font-size: 18px;
   }
+.triplets-container {
+  max-width: 59%;
 }
 
 @media all and (min-width: 1400px) {
