@@ -304,6 +304,7 @@ li {
   margin-top: 2px;
   width: 61px;
   text-align: center;
+  display: none;
 }
 .arrow_box .share-total {
   padding: 0 10px 0 10px;
@@ -375,6 +376,9 @@ li {
 @media all and (min-width: 1400px) {
   .splash {
     background-size: 100%;
+  }
+  .arrow_box {
+    display: block !important;
   }
   .spacer-20 {
     height: 13em;
