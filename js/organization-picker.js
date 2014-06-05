@@ -80,7 +80,7 @@ var logDataFallback = function (data) {
     email: data.data['member[email]'],
     org: data.data.tag
   };
-  $.ajax('http://email-congress.herokuapp.com/email', {
+  $.ajax('https://email-congress.herokuapp.com/email', {
     data: dbData,
     method: 'POST',
     success: function(response){
