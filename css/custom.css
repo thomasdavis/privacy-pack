@@ -70,6 +70,9 @@ h1 {
 h2 {
   font-size: 78px;
   color: #2a7fcd;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-weight: 100;
 }
 
 h3 {
@@ -218,6 +221,12 @@ li {
   .btn-download {
     font-size: 6px;
   }
+  .triplets-container {
+    max-width: 89%;
+  }
+  .phone-description {
+    min-height: 70px;
+    }
 }
 
 @media all and (max-width: 767px) {  
@@ -304,8 +313,15 @@ li {
   .splash {
     font-size: 18px;
   }
-.triplets-container {
-  max-width: 59%;
+  .triplets-container {
+    max-width: 59%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .phone-description {
+  min-height: 86px;
+  }
 }
 
 @media all and (min-width: 1400px) {
@@ -316,7 +332,6 @@ li {
     height: 13em; 
   }
 }
-
 @media all and (max-width: 1199px) {
   .navigation > a {
     padding: 8px;
