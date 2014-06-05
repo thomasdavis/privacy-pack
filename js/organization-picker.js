@@ -114,6 +114,7 @@ $(document).ready(function(){
         method: 'POST',
         success: function(response){
           if(response && response.data && response.data.success === true) {
+            emailLogged = true
             // If success == true in response, proceed, otherwise log the data in case
           } else {
             logDataFallback({data: $form.serializeObject()});
