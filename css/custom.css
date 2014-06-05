@@ -172,6 +172,12 @@ li {
   margin-bottom: 10px;
 }
 
+@media all and (min-width: 1000px) {
+  .spacer-20 {
+    height: 16em; 
+  }
+}
+
 @media all and (max-width: 1000px) and (min-width: 750px) {
 
   #id_email {
@@ -183,7 +189,7 @@ li {
   }
 
   .spacer-20 {
-    height: 20em;
+    height: 20em; 
   }
   
 
@@ -294,11 +300,11 @@ li {
   h1 { 
     padding-top: 70px;
   }
+  .spacer-20 {
+    height: 13em; 
+  }
 }
 
 @media all and (min-width: 1500px) {
-  .spacer-20 {
-    height: 17em;
-  }
 
 }
