@@ -4,6 +4,10 @@
   font-size: 14px;
 } 
 
+.splash .btn {
+  font-size: 18px;
+}
+
 .btn:hover, .app-store:hover {
   opacity: 0.6;
   color: #fff;
@@ -17,6 +21,10 @@
 
 a {
   font-weight: bold;
+}
+
+form {
+  clear: both;
 }
 
 .form-control {
@@ -152,7 +160,7 @@ li {
 }
 
 .spacer-20 {
-  height: 10em;
+  height: 14em;
 }
 
 .vertical-separated {
@@ -172,40 +180,27 @@ li {
   margin-bottom: 10px;
 }
 
-@media all and (min-width: 1000px) {
-  .spacer-20 {
-    height: 16em; 
-  }
-}
 
-@media all and (max-width: 1000px) and (min-width: 750px) {
-
+@media all and (min-width: 768px) and (max-width: 991px)  {
   #id_email {
     width: 70%;
   }
-
   .splash { 
-    background-position: 50%, -30%;
+    background-position: center 80%;
   }
-
   .spacer-20 {
-    height: 20em; 
+    height: 25em;
   }
-  
-
   h1 {
     font-size: 78px;
   }
-
   h3 {
     font-size: 12px;
     font-weight: bold;
   }
-  
   body {
     font-size: 11px;
   }
-
   .phone-description { 
     min-height: 130px;
   }
@@ -220,16 +215,13 @@ li {
   }
 }
 
-@media all and (max-width: 750px) {  
+@media all and (max-width: 767px) {  
   .vertical-separated {
     border-right: none;
   }
-
-
   .spacer-20 {
-    height: 25em;
+    height: 28em;
   }
-
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -238,7 +230,6 @@ li {
     font-size: 60px;
     padding-top: 50px;
   }
-
   h2 {
     font-size: 40px;
     font-weight: bold;
@@ -260,37 +251,33 @@ li {
   .btn, .form-control {
     font-size: 10px;
   }
-
-
-
-
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 767px) {
   .btn-share {
     width: 100px;
   }
-
 }
 
-@media all and (min-width: 1000px) {
-
+@media all and (min-width: 992px) {
   .phone-description { 
     min-height: 145px;
   }
-
+  .spacer-20 {
+    height: 17em; 
+  }
 }
 
-@media all and (max-width: 1200px) and (min-width: 1000px) {  
+@media all and (min-width: 1000px) and (max-width: 1200px)  {  
   h3 {
     font-size: 25px;
   }
-
   .phone-description { 
     min-height: 300px;
   }
-
-
+  .splash {
+    font-size: 18px;
+  }
 }
 
 @media all and (min-width: 1400px) {
@@ -306,5 +293,4 @@ li {
 }
 
 @media all and (min-width: 1500px) {
-
 }
