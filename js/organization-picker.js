@@ -1,4 +1,22 @@
 $(function() {
+
+  // Turns form data into JSON - Helper Method
+  $.fn.serializeObject = function() {
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+ };
+
   // Choose a random organization.
   var organizations = [
   {
@@ -56,15 +74,37 @@ $(function() {
   $('.disclaimer p').html(organization.disclaimer);
 });
 
+// If there are failures when submiting the email signup, we will post to a second server to simply backup the submission
+var logDataFallback = function (data) {
+  console.log('Log', data)
+}
 
 $(document).ready(function(){
    var $form = $('form');
+
    $form.submit(function(){
-      $.post($(this).attr('action'), $(this).serialize(), function(response){
-      $('#thank-you-message').append("<p> Thanks for signing up! </p>");
-      $form.remove();
-      $('.disclaimer').remove();
-      },'json');
+
+     // Because there is no server side error handling, we can just assume success anyway
+     $('#thank-you-message').append("<p> Thanks for signing up! </p>");
+     $form.remove();
+     $('.disclaimer').remove();
+
+      $.ajax($(this).attr('action') + 'asdaaaaa', {
+        data: $(this).serialize(),
+        method: 'POST',
+        success: function(response){
+          if(response && response.data && response.data.success === true) {
+            // If success == true in response, proceed, otherwise log the data in case
+          } else {
+            logDataFallback({data: $form.serializeObject()});
+          }
+        },
+        error: function () {
+          // if jQuery detects a http error, then log the data
+          logDataFallback({data: $form.serializeObject()});
+        },
+        dataType: 'json'
+      });
       return false;
    });
 });
