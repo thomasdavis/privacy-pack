@@ -76,7 +76,18 @@ $(function() {
 
 // If there are failures when submiting the email signup, we will post to a second server to simply backup the submission
 var logDataFallback = function (data) {
-  console.log('Log', data)
+  var dbData = {
+    email: data.data['member[email]'],
+    org: data.data.tag
+  };
+  $.ajax('http://email-congress.herokuapp.com/email', {
+    data: dbData,
+    method: 'POST',
+    success: function(response){
+    },
+    dataType: 'json'
+  });
+
 }
 
 $(document).ready(function(){
@@ -89,7 +100,7 @@ $(document).ready(function(){
      $form.remove();
      $('.disclaimer').remove();
 
-      $.ajax($(this).attr('action') + 'asdaaaaa', {
+      $.ajax($(this).attr('action'), {
         data: $(this).serialize(),
         method: 'POST',
         success: function(response){
